@@ -1,0 +1,810 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    margin-inline: 2%;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --background-color:#fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo img{
+    width: 5rem;
+    height: 4rem; 
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+nav ul li a{
+    transition: all 0.4s eas;
+}
+nav ul li a:hover{
+    color: #000000;
+    border: 2px solid #FF4F00;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    background-color:#fff;
+    color:black;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    transform: scale(1);
+}
+
+.user-account{
+    display: flex;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+#menu-bars, #cross{
+    display: none;
+}
+.login-btn {
+    padding-right: 1.5rem;
+    margin-left: 2rem;
+}
+
+.login-btn:hover{
+    border: 2px solid #FF4F00;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    background-color:#fff;
+    color:black;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    transform: scale(1);
+}
+.btn-register{
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    color:var(--background-color);
+    border: 2px solid royalblue;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+    background-color: #a42cd6;
+    transition:all 0s ease-in;
+}
+
+.btn-register:hover{
+    background-color:#fff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    transform: scale(1.1);
+}
+/* End of Navbar */
+
+header{
+    background: url(./feature_1.png) no-repeat cover;
+    display: grid;
+    grid-template-columns: 45rem 15rem;
+}
+.user-exp{
+    grid-row:2/3;
+
+}
+
+ .content{
+    margin-top: 4rem;
+    margin-bottom: -2rem;
+}
+.content h1{
+    font-family: "Abhaya Libre", serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.content p{
+    margin-top: 1rem;
+    font-size: 1rem;
+} 
+
+header .hero-img img{
+    padding-top: 3.5rem;
+    height: 35vw;
+}
+
+header .header-btn-1 {
+   margin-top: 2rem;
+   font-size: 0.9rem;
+   padding: 0.5rem 1.5rem;
+   margin-bottom: 3rem;
+   color:var(--background-color);
+   border: 2px solid royalblue;
+   border-radius: 0.3rem;
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+   background-color: #a42cd6;
+    
+}
+
+header .header-btn-1:hover{
+    background-color:#fff;
+    color:black;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    transform: scale(1);
+}
+
+header .header-btn-2 {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    color:#FF4F00;
+    border: 2px solid #FF4F00;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    background-color: transparent;
+     
+ }
+
+ header .header-btn-2:hover{
+    background-color:#a42cd6;
+    color:#fff;
+    border: #fff;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+ header .content .user-exp{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 1.2rem;
+    text-align: left;
+   
+ }
+
+ /*--------------------- END OF HEADER STYLING ----------------------*/
+
+.collaborations{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+ }
+
+ .collaborations h4{
+    font-family: "Abhaya Libre", serif;
+    text-align:center;
+    font-size: 3rem;
+    font-weight: 800;
+    padding-left: 10rem;
+    width: 50rem;
+
+ }
+ .collaborations .collab-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .collaborations .collab-img img {
+    width: 15rem;
+    height:fit-content; 
+    filter: grayscale(100%);
+ }
+
+ /*------------- END OF COLLABORATION SECTION --------------- */
+
+ .features{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin:auto;
+ }
+
+ .features-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .features-1-content{
+    display: block;
+ }
+
+ .features-1-content h3{
+   font-family:"Abhaya Libre", serif;
+   font-size: 3rem;
+   width: 30rem;
+   margin-bottom: 2rem;
+ }
+
+ .features-1-content p{
+    width: 20rem;
+    margin-bottom: 2rem;
+ }
+
+ .features-1-content .content-btn{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    color:var(--background-color);
+    border: 2px solid royalblue;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+    background-color: #a42cd6;
+ }
+
+ .features-1-content .content-btn:hover{
+    background-color:#fff;
+    color:black;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    transform: scale(1);
+}
+
+ .features-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .features-2-content{
+    display: block;
+ }
+
+ .features-2-content h3{
+   font-family:"Abhaya Libre", serif;
+   font-size: 3rem;
+   width: 30rem;
+   margin-bottom: 2rem;
+ }
+
+ .features-2-content p{
+    width: 24rem;
+    margin-bottom: 2rem;
+ }
+
+ /* ---------------END OF FEATURES------------------ */
+
+ /* ==========MENTORS SECTION========= */
+
+.Mentors-head{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Mentors-head h3{
+    font-family: "Abhaya Libre", serif;
+    font-size: 3.5rem;
+}
+.Mentors-head button{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    color:var(--background-color);
+    border: 2px solid royalblue;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+    background-color: #a42cd6;
+}
+.Mentors-head button:hover{
+    background-color:#fff;
+    color:black;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    transform: scale(1);
+}
+
+.Mentors-img{
+    display: flex;
+}
+.Mentors-img img {
+    border: 1px solid #a42cd6;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 4px rgba(107, 154, 6, 0.748);
+}
+
+
+/* ======================END OF MENTORS SECTION=================== */
+
+/* ========================FOOTER STARTS========================== */
+
+footer{
+    background-color: gray;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 1rem; */
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.social-media {
+    display:flex;
+}
+
+.social-media p {
+    width: 20rem;
+    margin-right:0.7rem;
+}
+.footer-logo img{
+    width: 5rem;
+    height: 4rem;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:1rem 0 1rem 0;
+    justify-self: center;
+    column-gap: 20rem;
+    
+}
+.copyright {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    color: #fdf0d5;
+    text-shadow: 0px 0px 4px rgba(0,0,255, 0.5);
+    
+}
+/* ============================MEDIA QUERIES (MOBILE)======================= */
+
+@media (max-width:600px) {
+    html,body{
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+    }
+    .logo img{
+        width: 10rem;
+        height: 7rem;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left:0;
+        padding-top: 2rem;
+        flex-direction: column;
+        width: 50rem;
+        height: 100%;
+        background-color:#fff;
+        z-index: 3;
+        box-shadow:0rem 0px 2rem rgba(0, 0, 0, .5);
+        gap:0;
+        align-items: flex-start;
+        transition: all 0.4s ease-in;
+        transition-delay: 100ms;
+    }
+    nav ul li{
+        padding-top: 2rem 1rem 0 0;
+        font-size: 5rem;
+        height: 10rem;
+    }
+    nav ul li a{
+        padding: 2rem 0 0 4rem;
+    }
+    nav ul li a:active{
+        color: #000000;
+        border: 2px solid #FF4F00;
+        border-radius: 5rem;
+        padding: 0 1.5rem;
+        background-color:#fff;
+        color:black;
+        cursor: pointer;
+        transition: all 300ms ease-in;
+        transform: scale(1);
+    
+    }
+    
+    nav{
+        margin-top: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30rem;
+    }
+    nav ul {
+        display: none;
+    }
+   .user-account{
+        justify-content: flex-end;
+   }
+   .login-btn{
+    font-size: 5rem;
+   }
+   .btn-register{
+        font-size: 5rem;
+        border-radius: 7rem;
+   }
+
+   #menu-bars{
+        display: inline-block;
+        font-size: 4rem;
+   }
+   #cross{
+    font-size: 4rem;
+   }
+    header{
+        grid-template-columns: 1fr;
+    }
+    header .hero-img img{
+        width:100%;
+        height: 100%;
+        filter: drop-shadow(1px 0 0.1rem #8338ec);
+    }
+    .content h1{
+        font-size:5.5rem;
+        font-weight:800;
+        width:80rem;
+      
+    }
+    .content p{
+        margin-top: 2rem;
+        font-size:3.3rem;
+        text-align: justify;
+        width: 80rem;
+    }
+    header .header-btn-1, header .header-btn-2 {
+        font-size: 3rem;
+        align-items: center;
+        margin: 4rem 3rem;
+    }
+    header .content .user-exp {
+        font-size: 4rem; 
+        gap: 1rem; 
+    }
+    header .content .user-exp i{
+        font-size: 5rem;
+    }
+
+    .collaborations{
+        display: block;
+        align-items: center;
+    }
+
+    .collaborations h4{
+        display: flex;
+        font-size: 5rem;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10rem;
+        width: 90rem;
+    }
+    .collaborations .collab-img{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding-left: 15rem;
+        width: 100vw;
+    }
+    .features-1 img{
+        width: 50rem;
+    }
+    .features-1 h3{
+        font-size: 4rem;
+    }
+    .features-1 p{
+        font-size: 2rem;
+        width: auto;
+    }
+    .features-1 .content-btn{
+        font-size: 2rem;
+    }
+
+    .features-2 img{
+        width: 50rem;
+    }
+    .features-2 h3{
+        font-size: 4rem;
+    }
+    .features-2 p{
+        font-size: 2rem;
+        width: auto;
+    }
+    .features-2 .content-btn{
+        font-size: 2rem;
+    }
+    .Mentors{
+        max-width: 50rem;
+    }
+    .Mentors-head{
+        justify-content: space-between;
+        width:80rem;
+        gap: 30%;
+        justify-content: center;
+    }
+    .Mentors-head h3{
+        font-size: 4rem;
+    }
+    .Mentors-head button{
+        font-size: 2rem;
+    }
+    .Mentors-img{
+        width: 200rem;
+    }
+    footer{
+        width: 85rem;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap:1rem;
+        /* font-size: 5rem; */
+    }
+    .footer-logo img{
+        width:20rem;
+        height: 18rem;
+    }
+    .social-media{
+        flex-direction: column;
+        align-items:center;
+        font-size: 5rem;
+    }
+    .social-media p{
+        text-align: center;
+        width: 80rem;
+    }
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        font-size: 4rem;
+    }
+    
+    .copyright{
+        font-size: 4rem;
+    }
+    hr{
+        color: #000;
+        
+    }
+}
+
+/* ====================TABLET MEDIA QUERIES=============== */
+
+@media (max-width:768px) {
+    html,body{
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+    }
+    .logo img{
+        width: 15rem;
+        height: 12rem;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left:0;
+        padding-top: 2rem;
+        flex-direction: column;
+        width: 50rem;
+        height: 100%;
+        background-color:#fff;
+        z-index: 3;
+        box-shadow:0rem 0px 2rem rgba(0, 0, 0, .5);
+        gap:0;
+        align-items: flex-start;
+        transition: all 0.4s ease-in;
+        transition-delay: 100ms;
+    }
+    nav ul li{
+        padding-top: 2rem 1rem 0 0;
+        font-size: 5rem;
+        height: 10rem;
+    }
+    nav ul li a{
+        padding: 2rem 0 0 4rem;
+    }
+    nav ul li a:active{
+        color: #000000;
+        border: 2px solid #FF4F00;
+        border-radius: 5rem;
+        padding: 0 1.5rem;
+        background-color:#fff;
+        color:black;
+        cursor: pointer;
+        transition: all 300ms ease-in;
+        transform: scale(1);
+
+    }
+
+    nav{
+        margin-top: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30rem;
+    }
+    nav ul {
+        display: none;
+    }
+    .user-account{
+        justify-content: flex-end;
+    }
+    .login-btn{
+    font-size: 4rem;
+    }
+    .btn-register{
+        font-size: 4rem;
+        border-radius: 7rem;
+    }
+
+    #menu-bars{
+        display: inline-block;
+        font-size: 4rem;
+    }
+    #cross{
+    font-size: 4rem;
+    }
+    header{
+        grid-template-columns: 1fr;
+    }
+    header .hero-img img{
+        width:100%;
+        height: 100%;
+        filter: drop-shadow(1px 0 0.1rem #8338ec);
+    }
+    .content h1{
+        font-size:5.5rem;
+        font-weight:800;
+        width:80rem;
+      
+    }
+    .content p{
+        font-size: 4rem;
+        text-align: justify;
+        text-spacing-trim: 0.5rem;
+    }
+    header .header-btn-1, header .header-btn-2 {
+        font-size: 3rem;
+        align-items: center;
+        margin: 4rem 3rem;
+    }
+    header .content .user-exp {
+        font-size: 4rem; 
+        gap: 1rem; 
+    }
+    header .content .user-exp i{
+        font-size: 5rem;
+    }
+
+    .collaborations{
+        display: block;
+        align-items: center;
+    }
+
+    .collaborations h4{
+        display: flex;
+        font-size: 6rem;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10rem;
+        width: 98rem;
+    }
+    .collaborations .collab-img{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding-left: 15rem;
+        width: 100vw;
+    }
+
+    .features-1 img{
+        width: 60rem;
+    }
+    .features-1 h3{
+        font-size: 4.5rem;
+        width: 43rem;
+    }
+    .features-1 p{
+        font-size: 3rem;
+        width: auto;
+    }
+    .features-1 .content-btn{
+        font-size: 2.5rem;
+    }
+
+    .features-2 img{
+        width: 60rem;
+    }
+    .features-2 h3{
+        font-size: 4.5rem;
+        width: 43rem;
+    }
+    .features-2 p{
+        font-size: 2rem;
+        width: auto;
+    }
+    .features-2 .content-btn{
+        font-size: 2.5rem;
+    }
+
+    .Mentors{
+        max-width: 80rem;
+    }
+    .Mentors-head{
+        justify-content:space-around;
+        width:100rem;
+        gap:40%;
+        justify-content: center;
+    }
+    .Mentors-head h3{
+        font-size: 4rem;
+        width: auto;
+    }
+    .Mentors-head button{
+        font-size: 2rem;
+    }
+    .Mentors-img{
+        justify-content: space-evenly;
+        width:120%;
+
+    }
+    footer{
+        width: 95rem;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap:1rem;
+        /* font-size: 5rem; */
+    }
+    .footer-logo img{
+        width:20rem;
+        height: 18rem;
+    }
+    .social-media{
+        flex-direction: column;
+        align-items:center;
+        font-size: 5rem;
+    }
+    .social-media p{
+        text-align: center;
+        width: 80rem;
+    }
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        font-size: 4rem;
+    }
+    
+    .copyright{
+        font-size: 4rem;
+    }
+    hr{
+        color: #000;
+        
+    }
+
+}
+
+
+
